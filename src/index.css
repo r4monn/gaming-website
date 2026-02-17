@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+body {
+    font-family: 'Roboto Mono', sans-serif;
+    width: 100dvw;
+    background-color: #DFDFF0;
+    overflow-x: hidden;
+}
+
+@theme {
+    --color-blue-50: #DFDFF0;
+    --color-blue-75: #DFDFF2;
+    --color-blue-100: #F0F2FA;
+    --color-blue-200: #010101;
+    --color-blue-300: #4FB7DD;
+
+    --color-violet-300: #5724FF;
+
+    --color-yellow-100: #8E983F;
+    --color-yellow-300: #EDFF66
+}
+
+@layer base {
+    @font-face {
+        font-family: 'circular-web';
+        src: url('/fonts/circular-web-regular.woff2') format('woff2')
+    }
+
+    @font-face {
+        font-family: 'general';
+        src: url('/fonts/general.woff2') format('woff2')
+    }
+
+    @font-face {
+        font-family: 'Roboto Mono';
+        src: url('/fonts/RobotoMono-Regular.ttf') format('ttf')
+    }
+
+    @font-face {
+        font-family: 'zentry';
+        src: url('/fonts/ZentryDisplay-Regular.otf') format('otf')
+    }
+}
