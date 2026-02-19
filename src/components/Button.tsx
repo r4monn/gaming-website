@@ -1,0 +1,30 @@
+interface ButtonProps {
+  id?: string;
+  title: string;
+  leftIcon?: React.ReactNode;
+  rightIcon?: React.ReactNode;
+  containerClassName?: string;
+}
+
+export default function Button({
+  id,
+  title,
+  leftIcon,
+  rightIcon,
+  containerClassName,
+}: ButtonProps) {
+  return (
+    <button
+      id={id}
+      className={`group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full bg-violet-50 px-7 py-3 text-black ${containerClassName}`}
+    >
+        {leftIcon}
+        <span className="relative inline-flex overflow-hidden font-general text-xs uppercase">
+            <div>
+                {title}
+            </div>
+        </span>
+        {rightIcon}
+    </button>
+  );
+}

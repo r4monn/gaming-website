@@ -1,9 +1,10 @@
+import Hero from "./components/Hero"
 
 function App() {
   return (
-    <h1 className="">
-      Hello world!
-    </h1>
+    <main className="relative min-h-screen w-screen overflow-x-hidden">
+      <Hero />
+    </main>
   )
 } 
 
