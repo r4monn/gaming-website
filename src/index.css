@@ -28,7 +28,7 @@ body {
 @layer base {
     @font-face {
         font-family: 'circular-web';
-        src: url('/fonts/circular-web-regular.woff2') format('woff2')
+        src: url('/fonts/circularweb-book.woff2') format('woff2')
     }
 
     @font-face {
@@ -138,7 +138,7 @@ body {
   max-width: 24rem; /* max-w-96 = 24rem */
   transform: translateX(-50%);
   text-align: center;
-  font-family: var(--font-circular-web);
+  font-family: var(--font-roboto);
   font-size: 1.125rem; /* text-lg */
   
   @media (width >= 768px) {
