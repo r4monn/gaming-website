@@ -15,7 +15,7 @@ export default function Hero() {
   const [loadedVideos, setLoadedVideos] = useState(0);
 
   const totalVideos = 4;
-  const nextVideoRef = useRef(null);
+  const nextVideoRef = useRef<HTMLVideoElement>(null);
 
   const handleVideoLoad = () => {
     setLoadedVideos((prev) => prev + 1);
@@ -49,7 +49,9 @@ export default function Hero() {
           height: "100%",
           duration: 1,
           ease: "power1.inOut",
-          onStart: () => nextVideoRef.current?.play(),
+          onStart: () => {
+            void nextVideoRef.current?.play();
+          },
         });
 
         gsap.from("#current-video", {

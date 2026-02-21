@@ -12,8 +12,8 @@ export default function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isNavVisible, setIsNavVisible] = useState(true);
 
-  const navContainerRef = useRef(null);
-  const audioElementRef = useRef(null);
+  const navContainerRef = useRef<HTMLDivElement>(null);
+  const audioElementRef = useRef<HTMLAudioElement>(null);
 
   const { y: currentScrollY } = useWindowScroll();
 
